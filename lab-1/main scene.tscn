@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://djb0lrwaj1267"]
+[gd_scene load_steps=4 format=3 uid="uid://djb0lrwaj1267"]
 
 [ext_resource type="Texture2D" uid="uid://dx5ui47rg0v86" path="res://tree.png" id="1_3ddp3"]
 [ext_resource type="Texture2D" uid="uid://dyu78knoelgmr" path="res://rocks.png" id="2_c0ne2"]
+[ext_resource type="PackedScene" uid="uid://cwf88w66km35r" path="res://tree.tscn" id="3_c0ne2"]
 
 [node name="Main (Node2D)" type="Node2D"]
 position = Vector2(2, 2)
@@ -12,67 +13,35 @@ position = Vector2(270, 602)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_c0ne2")
 
-[node name="Rocks 2" type="Sprite2D" parent="Rocks"]
-position = Vector2(1120, 1004)
-scale = Vector2(0.5, 0.5)
+[node name="Rocks2" type="Sprite2D" parent="."]
+position = Vector2(698, 600)
 texture = ExtResource("2_c0ne2")
 
-[node name="Rocks 3" type="Sprite2D" parent="Rocks"]
-position = Vector2(2684, 619.99994)
-scale = Vector2(-0.46327516, 0.53636616)
+[node name="Rocks3" type="Sprite2D" parent="."]
+position = Vector2(1286, 922)
 texture = ExtResource("2_c0ne2")
 
-[node name="Rocks 4" type="Sprite2D" parent="Rocks"]
-position = Vector2(2084, 24)
-scale = Vector2(0.5833333, 0.8668224)
+[node name="Rocks4" type="Sprite2D" parent="."]
+position = Vector2(512, 1354)
 texture = ExtResource("2_c0ne2")
 
-[node name="Rocks 5" type="Sprite2D" parent="Rocks"]
-position = Vector2(620, 456)
-scale = Vector2(0.5, 0.5)
+[node name="Rocks5" type="Sprite2D" parent="."]
+position = Vector2(1124, 1378)
 texture = ExtResource("2_c0ne2")
 
-[node name="Rocks 6" type="Sprite2D" parent="Rocks"]
-position = Vector2(3184, 648)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_c0ne2")
-
-[node name="Rocks 7" type="Sprite2D" parent="Rocks"]
-position = Vector2(1752, 1180)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_c0ne2")
-
-[node name="tree" type="Sprite2D" parent="."]
-position = Vector2(2106, 1028)
+[node name="Tree" type="Sprite2D" parent="."]
+position = Vector2(1331, 629.875)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_3ddp3")
 
-[node name="tree2" type="Sprite2D" parent="."]
-position = Vector2(1154, 930)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("1_3ddp3")
+[node name="tree1" parent="." instance=ExtResource("3_c0ne2")]
+position = Vector2(266, 332)
 
-[node name="tree3" type="Sprite2D" parent="."]
-position = Vector2(616.5, 574)
-scale = Vector2(0.55396473, 0.5)
-texture = ExtResource("1_3ddp3")
+[node name="tree2" parent="." instance=ExtResource("3_c0ne2")]
+position = Vector2(408, 1116)
 
-[node name="tree4" type="Sprite2D" parent="."]
-position = Vector2(256, 328)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("1_3ddp3")
+[node name="tree3" parent="." instance=ExtResource("3_c0ne2")]
+position = Vector2(1048, 1126)
 
-[node name="tree5" type="Sprite2D" parent="."]
-position = Vector2(1632, 638)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("1_3ddp3")
-
-[node name="tree6" type="Sprite2D" parent="."]
-position = Vector2(1302, 336)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("1_3ddp3")
-
-[node name="tree7" type="Sprite2D" parent="."]
-position = Vector2(840, 818)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("1_3ddp3")
+[node name="tree" parent="." instance=ExtResource("3_c0ne2")]
+position = Vector2(718, 212)
