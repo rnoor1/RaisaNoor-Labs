@@ -43,5 +43,5 @@ position = Vector2(408, 1116)
 [node name="tree3" parent="." instance=ExtResource("3_c0ne2")]
 position = Vector2(1048, 1126)
 
-[node name="tree" parent="." instance=ExtResource("3_c0ne2")]
+[node name="tree4" parent="." instance=ExtResource("3_c0ne2")]
 position = Vector2(718, 212)
